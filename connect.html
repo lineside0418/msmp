@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>接続 - MSMP</title>
+    <link rel="icon" type="image/png" href="assets/imgs/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="assets/imgs/icon.png" alt="MSMP Logo" />
+          <span>MSMP</span>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link">ホーム</a>
+          <a href="intro.html" class="nav-link">紹介</a>
+          <a href="connect.html" class="nav-link active">接続</a>
+          <a href="staff.html" class="nav-link">スタッフ</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">サーバー接続</h1>
+        <p class="page-subtitle">MSMPに参加する方法</p>
+      </div>
+    </section>
+
+    <!-- Server Info -->
+    <section class="server-info">
+      <div class="container">
+        <div class="server-card" data-aos="fade-up">
+          <div class="server-status">
+            <div class="status-indicator online"></div>
+            <span class="status-text">オンライン</span>
+          </div>
+          <div class="server-details">
+            <div class="server-ip">
+              <h3>サーバーIP</h3>
+              <div class="ip-container">
+                <code id="server-ip">s1.ssnetwork.io:52353</code>
+                <button class="copy-btn" onclick="copyIP()">
+                  <i class="fas fa-copy"></i>
+                </button>
+              </div>
+            </div>
+            <div class="server-version">
+              <h3>対応バージョン</h3>
+              <span class="version-badge">1.8.9 ~ 1.21.8</span>
+            </div>
+            <div class="server-players">
+              <h3>プレイヤー数</h3>
+              <span class="player-count">127 / 500</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connection Guide -->
+    <section class="connection-guide">
+      <div class="container">
+        <h2 class="section-title">接続方法</h2>
+        <div class="guide-steps">
+          <div class="step" data-aos="fade-right" data-aos-delay="100">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Minecraftを起動</h3>
+              <p>
+                Minecraft Java
+                Editionを起動し、「マルチプレイ」を選択してください。
+              </p>
+            </div>
+          </div>
+          <div class="step" data-aos="fade-left" data-aos-delay="200">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>サーバーを追加</h3>
+              <p>
+                「サーバーを追加」をクリックし、サーバーIPアドレス「s1.ssnetwork.io:52353」を入力してください。
+              </p>
+            </div>
+          </div>
+          <div class="step" data-aos="fade-right" data-aos-delay="300">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>サーバーに参加</h3>
+              <p>
+                追加されたサーバーをダブルクリックして接続完了！冒険を始めましょう。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discord Section -->
+    <section class="discord-section">
+      <div class="container">
+        <div class="discord-card" data-aos="zoom-in">
+          <div class="discord-icon">
+            <i class="fab fa-discord"></i>
+          </div>
+          <div class="discord-content">
+            <h2>Discordコミュニティ</h2>
+            <p>
+              MSMPの公式Discordサーバーに参加して、他のプレイヤーと交流しよう！最新情報やイベント情報もここで確認できます。
+            </p>
+            <a href="#" class="btn btn-discord">
+              <i class="fab fa-discord"></i>
+              Discordに参加
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="requirements">
+      <div class="container">
+        <h2 class="section-title">動作環境</h2>
+        <div class="requirements-grid">
+          <div class="requirement-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="requirement-icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h3>Minecraft Java Edition</h3>
+            <p>バージョン 1.20.x 以上</p>
+          </div>
+          <div class="requirement-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="requirement-icon">
+              <i class="fas fa-wifi"></i>
+            </div>
+            <h3>インターネット接続</h3>
+            <p>安定したネット環境</p>
+          </div>
+          <div class="requirement-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="requirement-icon">
+              <i class="fas fa-memory"></i>
+            </div>
+            <h3>推奨スペック</h3>
+            <p>RAM 4GB以上、Java 17以上</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">よくある質問</h2>
+        <div class="faq-list">
+          <div class="faq-item" data-aos="fade-up">
+            <div class="faq-question">
+              <h3>サーバーは無料ですか？</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                はい、MSMPは完全無料でプレイできます。課金要素はありますが、ゲームプレイに影響しない装飾的なアイテムのみです。
+              </p>
+            </div>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-question">
+              <h3>MODは使用できますか？</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                OptiFine、JEI、Minimapなどの補助系MODは使用可能です。チート系MODは禁止されています。
+              </p>
+            </div>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-question">
+              <h3>サーバーの稼働時間は？</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                24時間365日稼働しています。メンテナンス時間は事前にDiscordで告知されます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="assets/imgs/icon.png" alt="MSMP Logo" />
+            <span>MSMP</span>
+          </div>
+          <div class="footer-links">
+            <a href="intro.html">紹介</a>
+            <a href="connect.html">接続</a>
+            <a href="staff.html">スタッフ</a>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 MSMP. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      function copyIP() {
+        const ip = document.getElementById("server-ip").textContent;
+        navigator.clipboard.writeText(ip).then(() => {
+          const btn = document.querySelector(".copy-btn");
+          btn.innerHTML = '<i class="fas fa-check"></i>';
+          setTimeout(() => {
+            btn.innerHTML = '<i class="fas fa-copy"></i>';
+          }, 2000);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSMP - Minecraft Server</title>
+    <link rel="icon" type="image/png" href="assets/imgs/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="loading"></body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="assets/imgs/icon.png" alt="MSMP Logo" id="loading-logo-img">
+            </div>
+            <div class="loading-text">MSMP</div>
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/imgs/icon.png" alt="MSMP Logo">
+                <span>MSMP</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">ホーム</a>
+                <a href="intro.html" class="nav-link">紹介</a>
+                <a href="connect.html" class="nav-link">接続</a>
+                <a href="staff.html" class="nav-link">スタッフ</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="assets/imgs/hero.png" alt="Minecraft Screenshot" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Welcome to</span>
+                    <span class="title-main">MSMP</span>
+                </h1>
+                <p class="hero-subtitle">最高のMinecraftサーバー体験をあなたに</p>
+                <div class="hero-buttons">
+                    <a href="connect.html" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        今すぐ参加
+                    </a>
+                    <a href="intro.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        詳細を見る
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">なぜMSMPなのか</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>コミュニティ</h3>
+                    <p>フレンドリーなプレイヤーたちと一緒に楽しい時間を過ごそう</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>カスタム機能</h3>
+                    <p>独自のプラグインと機能でより豊かなゲーム体験</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>安全性</h3>
+                    <p>24/7監視とアンチチートシステムで安心してプレイ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>今すぐ冒険を始めよう</h2>
+                <p>MSMPで新しい仲間と出会い、無限の可能性を探索しませんか</p>
+                <div class="cta-buttons">
+                    <a href="connect.html" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        サーバーに参加
+                    </a>
+                    <a href="intro.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        詳細を見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/imgs/icon.png" alt="MSMP Logo">
+                    <span>MSMP</span>
+                </div>
+                <div class="footer-links">
+                    <a href="intro.html">紹介</a>
+                    <a href="connect.html">接続</a>
+                    <a href="staff.html">スタッフ</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MSMP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
