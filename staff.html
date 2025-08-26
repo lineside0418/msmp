@@ -1,267 +1,350 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>スタッフ一覧 - MSMP</title>
-    <link rel="icon" type="image/png" href="assets/imgs/icon.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="icon" type="image/png" href="assets/imgs/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="assets/imgs/icon.png" alt="MSMP Logo">
-                <span>MSMP</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">ホーム</a>
-                <a href="intro.html" class="nav-link">紹介</a>
-                <a href="connect.html" class="nav-link">接続</a>
-                <a href="staff.html" class="nav-link active">スタッフ</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="assets/imgs/icon.png" alt="MSMP Logo" />
+          <span>MSMP</span>
         </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link">ホーム</a>
+          <a href="intro.html" class="nav-link">紹介</a>
+          <a href="connect.html" class="nav-link">接続</a>
+          <a href="staff.html" class="nav-link active">スタッフ</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
-            <h1 class="page-title">スタッフ一覧</h1>
-            <p class="page-subtitle">MSMPを支える運営チーム</p>
-        </div>
+      <div class="container">
+        <h1 class="page-title">スタッフ一覧</h1>
+        <p class="page-subtitle">MSMPを支える運営チーム</p>
+      </div>
     </section>
 
     <!-- Owner Section -->
     <section class="staff-section">
-        <div class="container">
-            <h2 class="staff-category-title">オーナー</h2>
-            <div class="staff-grid">
-                <div class="staff-card owner" data-aos="zoom-in">
-                    <div class="staff-avatar">
-                        <img src="https://via.placeholder.com/150x150/4f46e5/ffffff?text=Owner" alt="Owner Avatar">
-                        <div class="staff-status online"></div>
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name">めたすけ</h3>
-                        <p class="staff-role">サーバーオーナー</p>
-                        <p class="staff-description">MSMPの創設者。サーバー全体の運営と方針決定を担当。</p>
-                        <div class="staff-social">
-                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-btn discord"><i class="fab fa-discord"></i></a>
-                            <a href="#" class="social-btn youtube"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="staff-category-title">オーナー</h2>
+        <div class="staff-grid">
+          <div
+            class="staff-card owner"
+            data-aos="zoom-in"
+            data-discord-id="1265989125685641359"
+          >
+            <div class="staff-avatar">
+              <img
+                src="https://via.placeholder.com/150x150/4f46e5/ffffff?text=Owner"
+                alt="Owner Avatar"
+                data-avatar-url=""
+              />
             </div>
+            <div class="staff-info">
+              <h3 class="staff-name">めたすけ</h3>
+              <p class="staff-role">サーバーオーナー</p>
+              <p class="staff-description">
+                metasukech
+              </p>
+              <div class="staff-social">
+                <a href="#" class="social-btn twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-btn youtube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-btn discord"
+                  ><i class="fab fa-discord"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Admin Section -->
     <section class="staff-section">
-        <div class="container">
-            <h2 class="staff-category-title">管理者</h2>
-            <div class="staff-grid">
-                <div class="staff-card admin" data-aos="fade-up" data-aos-delay="100">
-                    <div class="staff-avatar">
-                        <img src="https://via.placeholder.com/150x150/dc2626/ffffff?text=Admin1" alt="Admin Avatar">
-                        <div class="staff-status online"></div>
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name">AdminUser1</h3>
-                        <p class="staff-role">管理者</p>
-                        <p class="staff-description">プラグイン開発とサーバー技術面を担当。</p>
-                        <div class="staff-social">
-                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-btn github"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="staff-card admin" data-aos="fade-up" data-aos-delay="200">
-                    <div class="staff-avatar">
-                        <img src="https://via.placeholder.com/150x150/dc2626/ffffff?text=Admin2" alt="Admin Avatar">
-                        <div class="staff-status offline"></div>
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name">AdminUser2</h3>
-                        <p class="staff-role">管理者</p>
-                        <p class="staff-description">コミュニティ管理とイベント企画を担当。</p>
-                        <div class="staff-social">
-                            <a href="#" class="social-btn discord"><i class="fab fa-discord"></i></a>
-                            <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="staff-category-title">管理者</h2>
+        <div class="staff-grid">
+          <div
+            class="staff-card admin"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-discord-id="1113470496374267914"
+          >
+            <div class="staff-avatar">
+              <img
+                src="https://via.placeholder.com/150x150/dc2626/ffffff?text=Admin1"
+                alt="Admin Avatar"
+                data-avatar-url=""
+              />
             </div>
-        </div>
-    </section>
-
-    <!-- Moderator Section -->
-    <section class="staff-section">
-        <div class="container">
-            <h2 class="staff-category-title">モデレーター</h2>
-            <div class="staff-grid">
-                <div class="staff-card moderator" data-aos="fade-up" data-aos-delay="100">
-                    <div class="staff-avatar">
-                        <img src="https://via.placeholder.com/150x150/059669/ffffff?text=Mod1" alt="Moderator Avatar">
-                        <div class="staff-status online"></div>
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name">ModUser1</h3>
-                        <p class="staff-role">モデレーター</p>
-                        <p class="staff-description">チャット監視とプレイヤーサポートを担当。</p>
-                        <div class="staff-social">
-                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-btn discord"><i class="fab fa-discord"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="staff-card moderator" data-aos="fade-up" data-aos-delay="200">
-                    <div class="staff-avatar">
-                        <img src="https://via.placeholder.com/150x150/059669/ffffff?text=Mod2" alt="Moderator Avatar">
-                        <div class="staff-status online"></div>
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name">ModUser2</h3>
-                        <p class="staff-role">モデレーター</p>
-                        <p class="staff-description">建築エリアの管理とコンテスト運営を担当。</p>
-                        <div class="staff-social">
-                            <a href="#" class="social-btn youtube"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="social-btn twitch"><i class="fab fa-twitch"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="staff-card moderator" data-aos="fade-up" data-aos-delay="300">
-                    <div class="staff-avatar">
-                        <img src="https://via.placeholder.com/150x150/059669/ffffff?text=Mod3" alt="Moderator Avatar">
-                        <div class="staff-status offline"></div>
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name">ModUser3</h3>
-                        <p class="staff-role">モデレーター</p>
-                        <p class="staff-description">新規プレイヤーのサポートとガイドを担当。</p>
-                        <div class="staff-social">
-                            <a href="#" class="social-btn discord"><i class="fab fa-discord"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="staff-info">
+              <h3 class="staff-name">もさむしゃ</h3>
+              <p class="staff-role">管理者</p>
+              <p class="staff-description">mosa_musha</p>
+              <div class="staff-social">
+                <a href="#" class="social-btn twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-btn youtube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-btn discord"
+                  ><i class="fab fa-discord"></i
+                ></a>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Helper Section -->
-    <section class="staff-section">
-        <div class="container">
-            <h2 class="staff-category-title">ヘルパー</h2>
-            <div class="staff-grid">
-                <div class="staff-card helper" data-aos="fade-up" data-aos-delay="100">
-                    <div class="staff-avatar">
-                        <img src="https://via.placeholder.com/150x150/7c3aed/ffffff?text=Help1" alt="Helper Avatar">
-                        <div class="staff-status online"></div>
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name">HelperUser1</h3>
-                        <p class="staff-role">ヘルパー</p>
-                        <p class="staff-description">プレイヤーサポートとコミュニティ活動を支援。</p>
-                        <div class="staff-social">
-                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="staff-card helper" data-aos="fade-up" data-aos-delay="200">
-                    <div class="staff-avatar">
-                        <img src="https://via.placeholder.com/150x150/7c3aed/ffffff?text=Help2" alt="Helper Avatar">
-                        <div class="staff-status online"></div>
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name">HelperUser2</h3>
-                        <p class="staff-role">ヘルパー</p>
-                        <p class="staff-description">イベント運営のサポートを担当。</p>
-                        <div class="staff-social">
-                            <a href="#" class="social-btn discord"><i class="fab fa-discord"></i></a>
-                            <a href="#" class="social-btn youtube"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="staff-card helper" data-aos="fade-up" data-aos-delay="300">
-                    <div class="staff-avatar">
-                        <img src="https://via.placeholder.com/150x150/7c3aed/ffffff?text=Help3" alt="Helper Avatar">
-                        <div class="staff-status offline"></div>
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name">HelperUser3</h3>
-                        <p class="staff-role">ヘルパー</p>
-                        <p class="staff-description">Discord管理とコミュニティ運営を支援。</p>
-                        <div class="staff-social">
-                            <a href="#" class="social-btn discord"><i class="fab fa-discord"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="staff-card helper" data-aos="fade-up" data-aos-delay="400">
-                    <div class="staff-avatar">
-                        <img src="https://via.placeholder.com/150x150/7c3aed/ffffff?text=Help4" alt="Helper Avatar">
-                        <div class="staff-status online"></div>
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name">HelperUser4</h3>
-                        <p class="staff-role">ヘルパー</p>
-                        <p class="staff-description">建築コンテストの審査員として活動。</p>
-                        <div class="staff-social">
-                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div
+            class="staff-card admin"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-discord-id="1050319886720712714"
+          >
+            <div class="staff-avatar">
+              <img
+                src="https://via.placeholder.com/150x150/dc2626/ffffff?text=Admin2"
+                alt="Admin Avatar"
+                data-avatar-url=""
+              />
             </div>
+            <div class="staff-info">
+              <h3 class="staff-name">しんニャ</h3>
+              <p class="staff-role">管理者</p>
+              <p class="staff-description">shinniya</p>
+              <div class="staff-social">
+                <a href="#" class="social-btn twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-btn youtube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-btn discord"
+                  ><i class="fab fa-discord"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="staff-card admin"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-discord-id="1403179144849915914"
+          >
+            <div class="staff-avatar">
+              <img
+                src="https://via.placeholder.com/150x150/dc2626/ffffff?text=Admin2"
+                alt="Admin Avatar"
+                data-avatar-url=""
+              />
+            </div>
+            <div class="staff-info">
+              <h3 class="staff-name">りひたぁ</h3>
+              <p class="staff-role">管理者</p>
+              <p class="staff-description">rihitar</p>
+              <div class="staff-social">
+                <a href="#" class="social-btn twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-btn youtube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-btn discord"
+                  ><i class="fab fa-discord"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="staff-card admin"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-discord-id="1197083093903888465"
+          >
+            <div class="staff-avatar">
+              <img
+                src="https://via.placeholder.com/150x150/dc2626/ffffff?text=Admin2"
+                alt="Admin Avatar"
+                data-avatar-url=""
+              />
+            </div>
+            <div class="staff-info">
+              <h3 class="staff-name">たつがめず・チキンたつ田</h3>
+              <p class="staff-role">管理者</p>
+              <p class="staff-description">tatsu_games2025</p>
+              <div class="staff-social">
+                <a href="#" class="social-btn twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-btn youtube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-btn discord"
+                  ><i class="fab fa-discord"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="staff-card admin"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-discord-id="unknown"
+          >
+            <div class="staff-avatar">
+              <img
+                src="https://via.placeholder.com/150x150/dc2626/ffffff?text=Admin2"
+                alt="Admin Avatar"
+                data-avatar-url=""
+              />
+            </div>
+            <div class="staff-info">
+              <h3 class="staff-name">kurokk11</h3>
+              <p class="staff-role">管理者</p>
+              <p class="staff-description">kurokk11</p>
+              <div class="staff-social">
+                <a href="#" class="social-btn twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-btn youtube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-btn discord"
+                  ><i class="fab fa-discord"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="staff-card admin"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-discord-id="1322040375204122701"
+          >
+            <div class="staff-avatar">
+              <img
+                src="https://via.placeholder.com/150x150/dc2626/ffffff?text=Admin2"
+                alt="Admin Avatar"
+                data-avatar-url=""
+              />
+            </div>
+            <div class="staff-info">
+              <h3 class="staff-name">むさし</h3>
+              <p class="staff-role">管理者</p>
+              <p class="staff-description">musashi910</p>
+              <div class="staff-social">
+                <a href="#" class="social-btn twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-btn youtube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-btn discord"
+                  ><i class="fab fa-discord"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="staff-card admin"
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-discord-id="1332955518183932059"
+          >
+            <div class="staff-avatar">
+              <img
+                src="https://via.placeholder.com/150x150/dc2626/ffffff?text=Admin2"
+                alt="Admin Avatar"
+                data-avatar-url=""
+              />
+            </div>
+            <div class="staff-info">
+              <h3 class="staff-name">osushi_japan</h3>
+              <p class="staff-role">管理者</p>
+              <p class="staff-description">osushi_japan</p>
+              <div class="staff-social">
+                <a href="#" class="social-btn twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-btn youtube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-btn discord"
+                  ><i class="fab fa-discord"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Join Staff -->
     <section class="join-staff">
-        <div class="container">
-            <div class="join-staff-card" data-aos="zoom-in">
-                <h2>スタッフ募集</h2>
-                <p>MSMPのスタッフチームに参加しませんか？私たちと一緒にコミュニティを盛り上げましょう！</p>
-                <a href="#" class="btn btn-primary">
-                    <i class="fas fa-user-plus"></i>
-                    応募する
-                </a>
-            </div>
+      <div class="container">
+        <div class="join-staff-card" data-aos="zoom-in">
+          <h2>スタッフ募集</h2>
+          <p>
+            MSMPのスタッフチームに参加しませんか？私たちと一緒にコミュニティを盛り上げましょう！
+          </p>
+          <a href="#" class="btn btn-primary">
+            <i class="fas fa-user-plus"></i>
+            応募する
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/imgs/icon.png" alt="MSMP Logo">
-                    <span>MSMP</span>
-                </div>
-                <div class="footer-links">
-                    <a href="intro.html">紹介</a>
-                    <a href="connect.html">接続</a>
-                    <a href="staff.html">スタッフ</a>
-                </div>
-                <div class="footer-social">
-                    <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 MSMP. All rights reserved.</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="assets/imgs/icon.png" alt="MSMP Logo" />
+            <span>MSMP</span>
+          </div>
+          <div class="footer-links">
+            <a href="intro.html">紹介</a>
+            <a href="connect.html">接続</a>
+            <a href="staff.html">スタッフ</a>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 MSMP. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

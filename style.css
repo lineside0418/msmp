@@ -997,23 +997,7 @@ body.loaded {
     border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
-.staff-status {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 3px solid #111;
-}
-
-.staff-status.online {
-    background: #10b981;
-}
-
-.staff-status.offline {
-    background: #6b7280;
-}
+/* staff-status styles moved to Discord section */
 
 .staff-name {
     color: white;
@@ -1523,4 +1507,66 @@ body.loaded {
     .nav-link:hover {
         color: #4facfe;
     }
+}
+
+/* Discord Staff Status Styles - 既存デザインに調和 */
+.staff-avatar {
+    position: relative;
+}
+
+.staff-status {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.staff-status.online {
+    background-color: #43b581;
+    box-shadow: 0 0 6px rgba(67, 181, 129, 0.4);
+}
+
+.staff-status.offline {
+    background-color: #747f8d;
+}
+
+.staff-status.checking {
+    background: linear-gradient(45deg, #43b581, #747f8d);
+    animation: statusPulse 2s infinite;
+}
+
+.staff-status.unknown {
+    background-color: #faa61a;
+}
+
+@keyframes statusPulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
+}
+
+/* ホバー時にステータス情報を表示 */
+.staff-status:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 18px;
+    right: -12px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    white-space: nowrap;
+    z-index: 1000;
+    pointer-events: none;
 }
