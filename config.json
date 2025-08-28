@@ -1,0 +1,14 @@
+{
+  "server": {
+    "ip": "s1.ssnetwork.io:52353",
+    "version": "1.8.x ~ 1.20.x",
+    "name": "MSMP"
+  },
+  "discord": {
+    "inviteUrl": "https://discord.gg/nGJHT2wREU"
+  },
+  "social": {
+    "twitter": "#",
+    "youtube": "#"
+  }
+}
